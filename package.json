@@ -1,7 +1,10 @@
 {
   "name": "van_jax",
   "version": "1.0.0",
-  "module": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "index.d.ts",
   "scripts": {
     "build": "node build.mjs",
     "build-examples": "cd examples && node build.mjs"
