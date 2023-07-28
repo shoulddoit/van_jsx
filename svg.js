@@ -1,7 +1,7 @@
 // https://github.com/element-io/svg-tags/blob/master/lib/svg-tags.json
 // MIT LICENSE
 const tags = [
-  'a',
+  // 'a',
   'altGlyph',
   'altGlyphDef',
   'altGlyphItem',
@@ -82,3 +82,9 @@ const tags = [
   'view',
   'vkern',
 ];
+
+const map = new Set(tags);
+
+export function isSvg(name) {
+  return map.has(name);
+}
