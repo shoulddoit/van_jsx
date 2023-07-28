@@ -15,6 +15,14 @@
 - `h(name, props, ...children)`: jsx 工厂函数。配合 bundler 的 JSX Factory 选项，可以将 jsx 转换为 h 函数调用；
 - `render(container, component)`: 将组件挂载到 container。
 
+## 构建
+
+```sh
+pnpm i
+pnpm build
+pnpm build-examples
+```
+
 ## 示例
 
 见 [/examples](/examples/)
