@@ -1,0 +1,53 @@
+{
+  "name": "van_jax",
+  "version": "1.0.0",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "build-examples": "cd examples && node build.mjs"
+  },
+  "author": "zhanlefeng",
+  "license": "MIT",
+  "prettier": {
+    "arrowParens": "avoid",
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "quoteProps": "consistent",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2022": true,
+      "commonjs": true,
+      "browser": true,
+      "node": true,
+      "worker": true,
+      "mocha": true
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.17",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.0.0"
+  },
+  "dependencies": {
+    "vanjs-core": "1.0.0-rc.0"
+  }
+}
