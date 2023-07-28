@@ -9,11 +9,20 @@
 - [x] jsx 工厂函数
     - [x] svg 支持
 - [x] render 函数
+- [x] IDE 支持（vscode 对 jsx 算是原生支持）
 
 ## 核心 API
 
-- `h(name, props, ...children)`: jsx 工厂函数。配合 bundler 的 JSX Factory 选项，可以将 jsx 转换为 h 函数调用；
-- `render(container, component)`: 将组件挂载到 container。
+### `h(name: string | Maker, props?: object, ...children: Array<HTMLElement | SVGElement>): HTMLElement | SVGElement`
+
+jsx 工厂函数。配合 bundler 的 JSX Factory 选项，可以将 jsx 转换为 h 函数调用。
+
+其中 `type Maker = (props?: object & {children: Array<HTMLElement | SVGElement>}) => HTMLElement | SVGElement`
+
+### `render (container: HTMLElement, component: HTMLElement | SVGElement): void`
+
+将组件挂载到 container
+
 
 ## 构建
 
