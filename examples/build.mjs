@@ -1,7 +1,7 @@
 import esbuild from 'esbuild';
 import path from 'node:path';
 
-const examples = ['./helloworld/index.jsx'];
+const examples = ['./helloworld/index.jsx', './svgicon/index.jsx'];
 
 function build(input) {
   const fullPath = path.resolve(input);
