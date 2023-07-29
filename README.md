@@ -1,6 +1,6 @@
 # van_jsx
 
-一个简单的 VanJS jsx 拓展。
+一个 VanJS 的 jsx 拓展。
 
 [VanJS] 是一款自称只有 0.8kB、不需要 React/JSX 的响应式框架。而这个库的目标是让 jsx 转换为 VanJS 的函数调用。
 

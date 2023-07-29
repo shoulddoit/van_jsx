@@ -1,5 +1,5 @@
 {
-  "name": "van_jax",
+  "name": "van_jsx",
   "version": "1.0.0",
   "exports": {
     ".": "./dist/index.js"
