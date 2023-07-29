@@ -24,6 +24,10 @@
     "Reactive",
     "React"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "build": "node build.mjs",
     "build-examples": "cd examples && node build.mjs"
