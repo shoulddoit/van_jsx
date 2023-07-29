@@ -1,10 +1,29 @@
 {
-  "name": "van_jsx",
+  "name": "@shoulddoit/van_jsx",
   "version": "1.0.0",
+  "description": "van_jsx. A jsx helper for VanJS",
   "exports": {
     ".": "./dist/index.js"
   },
   "types": "index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.js.map",
+    "index.d.ts",
+    "h.js",
+    "svg.js",
+    "build.mjs",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "vanjs",
+    "jsx",
+    "UI",
+    "UI Framework",
+    "Reactive",
+    "React"
+  ],
   "scripts": {
     "build": "node build.mjs",
     "build-examples": "cd examples && node build.mjs"
