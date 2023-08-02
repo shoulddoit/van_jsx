@@ -44,7 +44,11 @@ function DisplayName({ name }) {
 render('#app', <DisplayName name={'Tom'}></DisplayName>);
 ```
 
-上面的 `DisplayName` 就称为一个组件。需要注意的是，van_jsx 中没有 hook，当 state 变更时，`DisplayName` 函数会重新调用，这点也和 React 类似。
+上面的 `DisplayName` 就称为一个组件。
+
+## 响应式开发
+
+vanjs 内置了 van.state 用于实现响应式开发范式。van.state 需要将数据包装为函数来追踪。示例可以参考 [reactive](./examples/reactive/index.jsx)。
 
 ## van_jsx 和 React 区别
 
