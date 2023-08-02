@@ -17,5 +17,10 @@ export function h(name, props, ...children) {
 }
 
 export function render(container, root) {
-  van.add(container, root);
+  let container_ = container;
+  if (typeof container === 'string') {
+    container_ = document.querySelector(container);
+  }
+
+  van.add(container_, root);
 }
