@@ -5,6 +5,8 @@
   "exports": {
     ".": "./dist/index.js"
   },
+  "module": "dist/index.js",
+  "type": "module",
   "types": "index.d.ts",
   "files": [
     "dist/index.js",
@@ -29,8 +31,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "node build.mjs",
-    "build-examples": "cd examples && node build.mjs"
+    "build": "node build.js",
+    "build-examples": "cd examples && node build.js"
   },
   "author": "zhanlefeng",
   "license": "MIT",
