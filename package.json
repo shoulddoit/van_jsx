@@ -1,6 +1,6 @@
 {
   "name": "@shoulddoit/van_jsx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "van_jsx. A jsx helper for VanJS",
   "exports": {
     ".": "./dist/index.js"
@@ -36,6 +36,14 @@
   },
   "author": "zhanlefeng",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuekcc/van_jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuekcc/van_jsx/issues"
+  },
+  "homepage": "https://github.com/yuekcc/van_jsx",
   "prettier": {
     "arrowParens": "avoid",
     "endOfLine": "auto",
