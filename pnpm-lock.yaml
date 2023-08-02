@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  vanjs-core:
-    specifier: 1.0.0-rc.0
-    version: 1.0.0-rc.0
-
 devDependencies:
   esbuild:
     specifier: ^0.18.17
@@ -25,6 +20,9 @@ devDependencies:
   prettier:
     specifier: ^2.0.0
     version: 2.0.0
+  vanjs-core:
+    specifier: 1.0.0
+    version: 1.0.0
 
 packages:
 
@@ -871,9 +869,9 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /vanjs-core@1.0.0-rc.0:
-    resolution: {integrity: sha512-DHXB4tb73a3OT4lMwkiuNrM2+EkKkdNlh61S/m8g1bkLrtRUM4bqlaL4D4KvszMkyANBs3V68oWMMQHHUyRmiQ==}
-    dev: false
+  /vanjs-core@1.0.0:
+    resolution: {integrity: sha512-Nxdk4S/TGrn7PBKnN2Nal2UcOEGD5ijOjHQcBntZJDpGy/cybSSSbWf/1oL2kNgo1QdRFlt++fN/lfWEv+sHew==}
+    dev: true
 
   /which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
