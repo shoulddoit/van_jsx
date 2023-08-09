@@ -2,7 +2,7 @@
 
 一个 VanJS 的 jsx 拓展。
 
-[VanJS] 是一款自称只有 0.8kB、不需要 React/JSX 的响应式框架。而这个库的目标是让 jsx 转换为 VanJS 的函数调用。
+[VanJS] 是一款号称不足 1kb、不需要 React/JSX 的响应式框架。van_js 目标是让 jsx 转换为 VanJS 函数调用。
 
 ## 特性
 
@@ -34,7 +34,9 @@
 
 ## 组件
 
-vanjs 大概是没有专门的组件概念。van_jsx 中一个组件是指返回 HTMLElement 的函数。比如：
+VanJS 没有专门的组件概念， VanJS 的本质是 `document.createElement`。但 van_jsx 引入了组件概念。在 van_jsx 中一个组件是指返回 HTMLElement 的函数。
+
+比如：
 
 ```js
 function DisplayName({ name }) {
@@ -46,22 +48,13 @@ render('#app', <DisplayName name={'Tom'}></DisplayName>);
 
 上面的 `DisplayName` 就称为一个组件。
 
-## 响应式开发
+## 响应式
 
-vanjs 内置了 van.state 用于实现响应式开发范式。van.state 需要将数据包装为函数来追踪。示例可以参考 [reactive](./examples/reactive/index.jsx)。
+所谓的“响应式”是指数据变化会自动更新视图。VanJS 内置了 van.state 用于实现响应式开发范式。van.state 需要将数据包装为函数来追踪。示例可以参考 [reactive](./examples/reactive/index.jsx)。
 
 ## van_jsx 和 React 区别
 
-虽然 van_jsx 使用 jsx 语法用于创建 HTML，但是其低层是 vanjs，属性实际上是 HTMLElement 的属性，所以部分属性的名称与 React 有所不同。
-React 是先创建 vdom 再渲染为 HTML，中间会有属性名称的处理。
-
-下面列出一些比较明显的区别：
-
-| 属性名称 | van_jsx | React   |
-| -------- | ------- | ------- |
-| 事件     | onclick | onClick |
-
->好像没有其他了。van_jsx 中的事件是原生事件，需要注意一下。
+虽然 van_jsx 使用 jsx 语法用于创建 HTML，但是其低层是 VanJS，更深层的实现原理是 DOM 操作。与 React 明显不同。React 是先创建 vdom 然后渲染为 HTML。
 
 ## 构建
 
