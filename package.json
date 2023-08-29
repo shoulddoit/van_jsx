@@ -1,6 +1,6 @@
 {
   "name": "@shoulddoit/van_jsx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "van_jsx. A jsx helper for VanJS",
   "exports": {
     ".": "./dist/index.js"
@@ -82,9 +82,9 @@
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.0.0",
-    "vanjs-core": "1.0.0"
+    "vanjs-core": "^1.1.3"
   },
   "peerDependencies": {
-    "vanjs-core": "1.0.0"
+    "vanjs-core": "^1.1.3"
   }
 }
