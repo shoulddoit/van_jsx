@@ -38,12 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuekcc/van_jsx.git"
+    "url": "git+https://github.com/shoulddoit/van_jsx.git"
   },
   "bugs": {
-    "url": "https://github.com/yuekcc/van_jsx/issues"
+    "url": "https://github.com/shoulddoit/van_jsx/issues"
   },
-  "homepage": "https://github.com/yuekcc/van_jsx",
+  "homepage": "https://github.com/shoulddoit/van_jsx",
   "prettier": {
     "arrowParens": "avoid",
     "endOfLine": "auto",
