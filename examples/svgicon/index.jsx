@@ -10,4 +10,4 @@ function Icon() {
   );
 }
 
-render(document.body, <Icon />);
+render(<Icon />, document.body);

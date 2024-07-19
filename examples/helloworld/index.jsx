@@ -1,6 +1,4 @@
-import { h, render } from '../../';
-
-let __h__ = h;
+import { render } from '../../';
 
 function Header({ name, children }) {
   return (
@@ -19,4 +17,4 @@ function App() {
   );
 }
 
-render(document.body, <App />);
+render(<App />, document.body);

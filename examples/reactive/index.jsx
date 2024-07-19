@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-render('#app', <App />);
+render(<App />, '#app');
